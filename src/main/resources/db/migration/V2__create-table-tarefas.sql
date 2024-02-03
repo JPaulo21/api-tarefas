@@ -1,0 +1,10 @@
+CREATE TABLE tarefas (
+  id INTEGER serial NOT NULL,
+   date_register TIMESTAMP WITHOUT TIME ZONE NOT NULL,
+   describe VARCHAR(255) NOT NULL,
+   enable BOOLEAN NOT NULL,
+   user_id INTEGER NOT NULL,
+   CONSTRAINT pk_tarefas PRIMARY KEY (id)
+);
+
+ALTER TABLE tarefas ADD CONSTRAINT FK_TAREFAS_ON_USER FOREIGN KEY (user_id) REFERENCES users (id);
