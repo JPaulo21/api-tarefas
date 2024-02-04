@@ -1,5 +1,5 @@
 CREATE TABLE tarefas (
-  id INTEGER serial NOT NULL,
+  id SERIAL NOT NULL,
    date_register TIMESTAMP WITHOUT TIME ZONE NOT NULL,
    describe VARCHAR(255) NOT NULL,
    enable BOOLEAN NOT NULL,
