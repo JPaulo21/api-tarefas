@@ -2,6 +2,7 @@ package com.jp.apitarefas.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
@@ -16,6 +17,7 @@ import java.util.List;
 @Table(name = "USERS")
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @Data
 public class User implements UserDetails {
 
@@ -31,7 +33,8 @@ public class User implements UserDetails {
     @Column(nullable = false, unique = true)
     private String email;
 
-    private LocalDateTime birth_date;
+    @Column(name = "birth_date")
+    private LocalDateTime birthDate;
 
     @Column(nullable = false)
     private Boolean enable;
