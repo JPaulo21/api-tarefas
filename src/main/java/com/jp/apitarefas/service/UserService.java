@@ -22,7 +22,7 @@ public class UserService implements UserDetailsService {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
 
         if(userRepository.findByUsername(user.getUsername()).isPresent())
-            throw new RuntimeException();
+            throw new RuntimeException("Usuário já cadastrado");
 
         return userRepository.save(user);
     }
