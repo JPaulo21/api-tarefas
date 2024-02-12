@@ -5,6 +5,8 @@ import com.jp.apitarefas.repositories.TarefaRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class TarefaService {
@@ -13,5 +15,9 @@ public class TarefaService {
 
     public Tarefa createTarefa(Tarefa tarefa){
         return tarefaRepository.save(tarefa);
+    }
+
+    public List<Tarefa> getAllTarefasById(Integer id) {
+        return tarefaRepository.findByUserId(id);
     }
 }
