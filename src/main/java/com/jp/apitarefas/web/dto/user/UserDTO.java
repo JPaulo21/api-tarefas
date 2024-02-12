@@ -1,4 +1,4 @@
-package com.jp.apitarefas.web.dto;
+package com.jp.apitarefas.web.dto.user;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.*;

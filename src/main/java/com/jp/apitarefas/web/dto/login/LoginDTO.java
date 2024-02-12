@@ -1,4 +1,4 @@
-package com.jp.apitarefas.web.dto;
+package com.jp.apitarefas.web.dto.login;
 
 public record LoginDTO(
         String username,
