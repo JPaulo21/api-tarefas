@@ -1,9 +1,8 @@
 package com.jp.apitarefas.web.controller;
 
-import com.jp.apitarefas.entity.User;
 import com.jp.apitarefas.mapper.UserMapper;
 import com.jp.apitarefas.service.UserService;
-import com.jp.apitarefas.web.dto.UserDTO;
+import com.jp.apitarefas.web.dto.user.UserDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;

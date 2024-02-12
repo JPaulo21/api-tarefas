@@ -3,7 +3,7 @@ package com.jp.apitarefas.web.controller;
 import com.jp.apitarefas.config.security.JWT.TokenDTO;
 import com.jp.apitarefas.config.security.JWT.TokenService;
 import com.jp.apitarefas.entity.User;
-import com.jp.apitarefas.web.dto.LoginDTO;
+import com.jp.apitarefas.web.dto.login.LoginDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
