@@ -7,16 +7,16 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
 
 @Slf4j
-@Component
+@Configuration
 @RequiredArgsConstructor
 public class TokenAuthorizationFilter extends OncePerRequestFilter {
 
@@ -32,7 +32,6 @@ public class TokenAuthorizationFilter extends OncePerRequestFilter {
         }
 
         var username = tokenService.validateToken(token);
-        log.info(username);
         UserDetails user = userRepository.findByUsername(username).orElseThrow(
                 () -> new RuntimeException("Usuário não encontrado")
         );
