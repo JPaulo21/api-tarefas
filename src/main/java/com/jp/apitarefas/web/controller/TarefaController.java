@@ -1,7 +1,7 @@
 package com.jp.apitarefas.web.controller;
 
 import com.jp.apitarefas.entity.Tarefa;
-import com.jp.apitarefas.mapper.TarefaMapper;
+import com.jp.apitarefas.web.mapper.TarefaMapper;
 import com.jp.apitarefas.service.TarefaService;
 import com.jp.apitarefas.web.dto.tarefa.TarefaConsultaDTO;
 import com.jp.apitarefas.web.dto.tarefa.TarefaDTO;

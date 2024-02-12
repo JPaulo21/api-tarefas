@@ -1,4 +1,4 @@
-package com.jp.apitarefas.mapper;
+package com.jp.apitarefas.web.mapper;
 
 import com.jp.apitarefas.entity.User;
 import com.jp.apitarefas.web.dto.user.UserDTO;

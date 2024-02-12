@@ -1,6 +1,6 @@
 package com.jp.apitarefas.web.controller;
 
-import com.jp.apitarefas.mapper.UserMapper;
+import com.jp.apitarefas.web.mapper.UserMapper;
 import com.jp.apitarefas.service.UserService;
 import com.jp.apitarefas.web.dto.user.UserDTO;
 import lombok.RequiredArgsConstructor;
