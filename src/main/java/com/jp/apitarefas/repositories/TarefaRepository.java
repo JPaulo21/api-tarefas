@@ -9,5 +9,5 @@ import java.util.List;
 @Repository
 public interface TarefaRepository extends JpaRepository<Tarefa, Integer> {
 
-    List<Tarefa> findByUserId(Integer userId);
+    List<Tarefa> findByUserIdAndEnableTrue(Integer userId);
 }

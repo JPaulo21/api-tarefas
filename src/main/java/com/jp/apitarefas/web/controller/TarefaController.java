@@ -38,4 +38,10 @@ public class TarefaController {
         return ResponseEntity.ok(tarefaDTOList);
     }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity unableTarefa(@PathVariable Integer id){
+        tarefaService.disableTarefa(id);
+        return ResponseEntity.noContent().build();
+    }
+
 }
